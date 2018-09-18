@@ -10,6 +10,25 @@
 
 // Your code :
 
+// function multiply(num1, num2){
+//     let sum = 0;
+//     for (let count = 0; count < num2; count ++){
+//         sum += num1;
+//     }
+//     return(sum);
+// }
+
+function multiply(num1, num2){
+    let sum = 0;
+    let count = 0
+    while (count > num2){
+        sum += num1;
+    }
+    return(sum);
+}
+
+
+
 //* Begin of tests
 const assert = require('assert')
 
