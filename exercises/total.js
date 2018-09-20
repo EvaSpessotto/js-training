@@ -6,7 +6,6 @@
  *
  */
 
-
 function total(array1){
     let total = 0;
     for (let count = 0; count < array1.length; count++){

@@ -9,6 +9,15 @@
 
 // Your code :
 
+function getLength(myArray) {
+    let sum = 0;
+    for (let index = 0 ; index < myArray.length ; index++) {
+        sum += myArray[index];
+    }
+    return myArray.length;
+}
+
+
 //* Begin of tests
 const assert = require('assert')
 
