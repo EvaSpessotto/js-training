@@ -10,10 +10,15 @@
  *
  */
 
+function jadenCase(str){
+  return str.split(" ").map(function(word){
+    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+  }).join(" ");
+}
 
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(jadenCase('hello are you okey ?'), 'Hello Are You Okey ?')
 // End of tests */

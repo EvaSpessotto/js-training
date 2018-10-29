@@ -9,6 +9,14 @@
 
 // Your code :
 
+class Circle {
+    constructor() {
+        this.circular = this;
+    }
+}
+
+const circular = new Circle();
+
 //* Begin of tests
 const assert = require('assert')
 

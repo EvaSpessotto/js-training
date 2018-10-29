@@ -15,31 +15,17 @@ function multiply(num1, num2){
     if (num1 === 0 || num2 === 0){
         return 0;
     }
-    else if (num1 > 0 && num2 > 0){
-        for (let i = 0; i < num2; i++){
-            sum += num1;
+
+    else{
+        for (let j = 0; j < Math.abs(num1); j++){
+            sum += Math.abs(num2);
         }
-        return sum;
-    }
-    else if (num1 < 0){
-        for (let j = 0; j > num1; j--){
-            sum += num2;
-        }
-        return -sum;
-    }
-    else if (num2 < 0){
-        for (let j = 0; j > num2; j--){
-            sum += num1;
-        }
-        return -sum;
-    }
-    else if (num1 < 0 && num2 < 0){
-        for (let k = 0; k > num1; k++){
-            sum += num2;
-        }
-        return -sum;
-    }
+        return ((num1 > 0 && num2 > 0) || (num1 < 0 && num2 < 0)) ? sum : -sum;
+    }   
 }
+
+
+
 //* Begin of tests
 const assert = require('assert')
 
